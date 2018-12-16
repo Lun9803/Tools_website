@@ -25,6 +25,9 @@ $(document).ready(function(){
 	});
 	
 	$(".add").click(function(){
+		var del_img = $(this).parent().find(".del_img");
+		del_img.hide();
+		
 		var name = prompt("enter the name of the website");
 		if(name.length==0){
 			alert("name not entered");
@@ -45,7 +48,7 @@ $(document).ready(function(){
 			url='https://'+url;
 		}
 		
-		var e="<a class='nav' href="+url+">"+name+"</a>"+'<img src="img/del.jpg" class="del_img"></img>';
+		var e="<a class='nav' target='_blank' href="+url+">"+name+"</a>"+'<img src="img/del.jpg" class="del_img"></img>';
 		$(this).before(e);
 		
 		localStorage.setItem("block", $(document.body).html());
