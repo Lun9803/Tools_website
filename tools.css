@@ -1,0 +1,57 @@
+html{
+	background:black;
+}
+
+header{
+	color:#CAE1FF;
+	font-size:30px;
+	margin:30px;
+}
+
+.title:hover{color:#FFC0CB;cursor:pointer;}
+
+.title{
+	font-size:25px;
+	margin:20px;
+	color:#E0EEEE;
+}
+
+.block{
+	padding:15px;
+	border-style:dashed;
+	border-color:grey;
+	margin:20px;
+	font-size:17px;
+}
+
+.add:hover{color:red;cursor:pointer;}
+
+.add{
+	color:#FFE4B5;
+	display:none;
+}
+
+.del:hover{color:red;cursor:pointer;}
+
+.del{
+	display:none;
+	color:#FFE4B5;
+}
+
+.nav:hover{color:#FFC0CB;}
+
+.nav{
+	color:#CFCFCF;
+	margin:20px;
+	text-decoration:none;
+}
+
+.add_button{
+	color:#CFCFCF;
+	margin:20px;
+}
+
+footer{
+	color:grey;
+	font-weight:lighter;
+}
