@@ -51,6 +51,14 @@ $(document).ready(function(){
 		var e="<a class='nav' target='_blank' href="+url+">"+name+"</a>"+'<img src="img/del.jpg" class="del_img"></img>';
 		$(this).before(e);
 		
+		$(this).prev().click(function(){
+			var target=$(this).prev();
+			if(confirm("确定删除"+target.html()+"?")){
+				target.remove();
+				$(this).remove();
+			}
+		});
+		
 		localStorage.setItem("block", $(document.body).html());
 	});
 		
@@ -67,7 +75,6 @@ $(document).ready(function(){
 			$(this).remove();
 			localStorage.setItem("block", $(document.body).html());
 		}
-
 	});
 	
 	$("#initialize").click(function(){
