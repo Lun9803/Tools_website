@@ -29,20 +29,32 @@ header{
 .add{
 	color:#FFE4B5;
 	display:none;
+	margin-left:30px;
 }
 
 .del:hover{color:red;cursor:pointer;}
 
 .del{
-	display:none;
 	color:#FFE4B5;
+	display:none;
+	margin-left:30px;
+}
+
+.del_img:hover{cursor:pointer;}
+
+.del_img{
+	display:none;
+	height:15px;
+	width:17px;
+	margin-right:20px;
 }
 
 .nav:hover{color:#FFC0CB;}
 
 .nav{
 	color:#CFCFCF;
-	margin:20px;
+	margin-left:20px;
+	margin-right:20px;
 	text-decoration:none;
 }
 
@@ -54,4 +66,13 @@ header{
 footer{
 	color:grey;
 	font-weight:lighter;
+}
+
+#initialize:hover{cursor:pointer;}
+
+#initialize{
+	font-size:20px;
+	color:grey;
+	float:right;
+	margin-right:20px;
 }
